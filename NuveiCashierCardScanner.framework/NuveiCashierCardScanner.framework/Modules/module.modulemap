@@ -1,0 +1,6 @@
+framework module NuveiCashierCardScanner {
+  umbrella header "NuveiCashierCardScanner.h"
+
+  export *
+  module * { export * }
+}
