@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NuveiCashierCardScanner : NSObject
 
 + (void)connectTo:(WKWebView *)webView;
++ (NSString *)versionNumber;
 
 @end
 
