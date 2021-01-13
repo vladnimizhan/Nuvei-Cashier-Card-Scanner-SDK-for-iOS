@@ -1,16 +1,14 @@
 # Nuvei Cashier Card Scanner SDK for iOS
 
+## LICENSE
+See [license](https://cocoapods.org/)
+
 ## SETUP
 ### If you use [CocoaPods](https://cocoapods.org/)
-Add the next source(s) in the top of your Podfile:
-```ruby
-source 'https://github.com/CocoaPods/Specs.git' // if you don't already have this source
-source 'https://github.com/SafeChargeInternational/Pods.git'
-```
 
 Add the next line to the dependencies list in your Podfile:
 ```ruby
-pod 'NuveiCashierCardScanner', '~> 1.0'
+pod 'NuveiCashierCardScanner'
 ```
 
 Add the next block in the end of your app's target dependencies: 

@@ -119,7 +119,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1160;
-				ORGANIZATIONNAME = Mobaxe;
+				ORGANIZATIONNAME = Nuvei;
 				TargetAttributes = {
 					7144EB87251295BB00C56ED4 = {
 						CreatedOnToolsVersion = 11.6;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>305589609440-2ei8ohqs198c2fpamfr76mgjefv8u0rj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.305589609440-2ei8ohqs198c2fpamfr76mgjefv8u0rj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBqxobph8z6uix_JIPJEZfrsnz2zOL4EDs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>305589609440</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.nuvei.CashierCardScanner-Example</string>
+	<key>PROJECT_ID</key>
+	<string>sc-card-scanner-sdk-tester</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sc-card-scanner-sdk-tester.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:305589609440:ios:c0789f20820a4440ea0185</string>
+	<key>DATABASE_URL</key>
+	<string>https://sc-card-scanner-sdk-tester.firebaseio.com</string>
+</dict>
+</plist>

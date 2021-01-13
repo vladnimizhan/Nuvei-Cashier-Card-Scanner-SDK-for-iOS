@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="It4-ls-Aj1">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="aiY-yF-CCG">
+            <objects>
+                <navigationController id="It4-ls-Aj1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mML-kv-TB5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="9PE-N8-Vry"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hed-iB-Z3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-814" y="134"/>
+        </scene>
+        <!--SC Card Scanner SDK Tester-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="SC Card Scanner SDK Tester" id="vXZ-lx-hvc" customClass="ViewController" customModule="SCCardScannerSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter URL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKT-8r-zB9">
+                                <rect key="frame" x="36" y="144" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N3Q-Nb-iKY">
+                                <rect key="frame" x="36" y="173" width="303" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJd-Z1-00M">
+                                <rect key="frame" x="295" y="215" width="54" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EVj-AI-Jzr"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="cxx-W7-m9K" kind="show" id="p09-06-zyy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBl-AI-93r">
+                                <rect key="frame" x="36" y="226" width="12" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CJd-Z1-00M" firstAttribute="top" secondItem="N3Q-Nb-iKY" secondAttribute="bottom" constant="8" id="0y6-S4-1g9"/>
+                            <constraint firstItem="N3Q-Nb-iKY" firstAttribute="top" secondItem="tKT-8r-zB9" secondAttribute="bottom" constant="8" id="1Et-VT-DzR"/>
+                            <constraint firstItem="N3Q-Nb-iKY" firstAttribute="leading" secondItem="tKT-8r-zB9" secondAttribute="leading" id="2lX-MR-u3e"/>
+                            <constraint firstItem="CJd-Z1-00M" firstAttribute="firstBaseline" secondItem="IBl-AI-93r" secondAttribute="firstBaseline" id="4St-Ux-CcY"/>
+                            <constraint firstItem="tKT-8r-zB9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="FdI-rx-pYJ"/>
+                            <constraint firstItem="CJd-Z1-00M" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IBl-AI-93r" secondAttribute="trailing" constant="8" id="GpE-2u-oRn"/>
+                            <constraint firstItem="IBl-AI-93r" firstAttribute="leading" secondItem="N3Q-Nb-iKY" secondAttribute="leading" id="Xx0-OM-z4G"/>
+                            <constraint firstItem="tKT-8r-zB9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="Z4P-s2-xFd"/>
+                            <constraint firstItem="N3Q-Nb-iKY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jLz-nQ-bwy"/>
+                            <constraint firstItem="CJd-Z1-00M" firstAttribute="trailing" secondItem="N3Q-Nb-iKY" secondAttribute="trailing" constant="10" id="ofC-vx-R7N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SC Card Scanner SDK Tester" id="Gbp-A4-6kg"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="IBl-AI-93r" id="AJx-Nd-pob"/>
+                        <outlet property="urlTextField" destination="N3Q-Nb-iKY" id="H1O-k1-B86"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="134"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Zfc-04-fVW">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="cxx-W7-m9K" customClass="WebViewController" customModule="SCCardScannerSDK_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nze-OE-tQ3"/>
+                        <viewControllerLayoutGuide type="bottom" id="2hX-ux-tEc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yUh-bN-JMe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVQ-MY-emy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HVQ-MY-emy" firstAttribute="leading" secondItem="yUh-bN-JMe" secondAttribute="leading" id="9ky-Vo-bbV"/>
+                            <constraint firstItem="HVQ-MY-emy" firstAttribute="top" secondItem="yUh-bN-JMe" secondAttribute="top" id="EM4-5F-Dbu"/>
+                            <constraint firstItem="2hX-ux-tEc" firstAttribute="top" secondItem="HVQ-MY-emy" secondAttribute="bottom" id="JhC-kE-iR9"/>
+                            <constraint firstAttribute="trailing" secondItem="HVQ-MY-emy" secondAttribute="trailing" id="pua-9P-A0X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uqj-ry-Deh"/>
+                    <connections>
+                        <outlet property="webView" destination="HVQ-MY-emy" id="Q6v-BC-tdL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6z-nt-ASs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.60000000000002" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
