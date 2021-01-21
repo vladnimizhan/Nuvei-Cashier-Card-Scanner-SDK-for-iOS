@@ -1,8 +1,5 @@
 # Nuvei Cashier Card Scanner SDK for iOS
 
-## LICENSE
-See [license](https://cocoapods.org/)
-
 ## SETUP
 ### If you use [CocoaPods](https://cocoapods.org/)
 
@@ -49,6 +46,9 @@ The SDK works with WKWebView, so add the next line before you load Nuvei cashier
 ```swift
 NuveiCashierCardScanner.connect(to: webView)
 ```
+
+## LICENSE
+See [license](https://cocoapods.org/)
 
 ## ACKNOWLEDGEMENTS
 This SDK depends on card-io, so please follow the next requirements by card-io:
