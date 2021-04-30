@@ -8,21 +8,27 @@
 
 import UIKit
 import WebKit
-import NuveiCashierCardScanner
+import NuveiCashierScanner
+import CodeScanner
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, WKUIDelegate {
 
-    @IBOutlet var webView: WKWebView!
+    var webView: WKWebView!
     
     var initialURL: URL!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NuveiCashierCardScanner.connect(to: webView)
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+        
+        NuveiCashierScanner.connect(to: webView)
         
         webView.load(URLRequest(url: initialURL))
         
-        print("NuveiCashierCardScanner Version: ", NuveiCashierCardScanner.versionNumber())
+        print("NuveiCashierCardScanner Version: ", NuveiCashierScanner.versionNumber())
     }
 }

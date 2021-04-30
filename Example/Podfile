@@ -3,10 +3,10 @@ use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/SafeChargeInternational/Pods.git'
+source 'https://github.com/vladnimizhan/Nuvei-Cashier-Card-Scanner-SDK-for-iOS.git'
 
 target 'NuveiCashierCardScannerExample' do
-  pod 'NuveiCashierCardScanner'
+  pod 'NuveiCashierScanner'
 
   # add pods for desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods

@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage                    = "https://github.com/SafeChargeInternational/Pods"
   s.license                     = 'Commercial license'
   s.author                      = "Nuvei"
-  s.source                      = { :git => "git@github.com:SafeChargeInternational/Pods.git", :tag => s.version.to_s }
+  s.source                      = { :git => "git@github.com:vladnimizhan/Nuvei-Cashier-Card-Scanner-SDK-for-iOS.git", :tag => s.version.to_s }
   s.platform                    = :ios, '10.0'
   s.requires_arc                = true
   s.ios.deployment_target       = "10.0"
@@ -24,5 +24,6 @@ Pod::Spec.new do |s|
       'SWIFT_VERSION' => '5.1',
       'OTHER_LDFLAGS' => '$(inherited) -objc -ObjC -lc++ -framework "NuveiCashierScanner"',
       'GCC_SYMBOLS_PRIVATE_EXTERN' => 'YES',
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
 end
