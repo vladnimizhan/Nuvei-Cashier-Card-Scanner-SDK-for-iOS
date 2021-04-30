@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                        = "NuveiCashierCardScanner"
-  s.version                     = '0.0.14'
+  s.version                     = '0.0.15'
   s.summary                     = "NuveiCashierCardScanner"
   s.description                 = <<-DESC
                                    Nuvei Cashier Card Scanner SDK
