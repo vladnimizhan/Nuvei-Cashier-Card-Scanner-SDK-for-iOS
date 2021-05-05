@@ -18,12 +18,4 @@ Pod::Spec.new do |s|
   s.source_files                = 'NuveiCashierCardScanner/*.{h,m}'
 
   s.dependency 'CardIO'
-
-  s.xcconfig =  {
-      'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-      'OTHER_LDFLAGS' => '$(inherited) -objc -ObjC -lc++',
-      'GCC_SYMBOLS_PRIVATE_EXTERN' => 'YES',
-      'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) FRAMEWORK_VERSION=\"0.0.13\"',
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
 end
