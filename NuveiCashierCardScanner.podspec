@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.description                 = <<-DESC
                                    Nuvei Cashier Card Scanner SDK
                                   DESC
-  s.homepage                    = "https://github.com/SafeChargeInternational/Nuvei-Cashier-Card-Scanner-SDK-for-iOS"
+  s.homepage                    = "https://github.com/vladnimizhan/Nuvei-Cashier-Card-Scanner-SDK-for-iOS.git"
   s.license                     = './LICENSE.md'
   s.author                      = "Nuvei"
-  s.source                      = { :git => "https://github.com/SafeChargeInternational/Nuvei-Cashier-Card-Scanner-SDK-for-iOS.git", :tag => s.version.to_s }
+  s.source                      = { :git => "https://github.com/vladnimizhan/Nuvei-Cashier-Card-Scanner-SDK-for-iOS.git", :tag => s.version.to_s }
   s.platform                    = :ios, '10.0'
   s.requires_arc                = true
   s.ios.deployment_target       = "10.0"

@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description                 = <<-DESC
                                    Nuvei Cashier Scanner Library
                                   DESC
-  s.homepage                    = "https://github.com/SafeChargeInternational/Pods"
+  s.homepage                    = "https://github.com/vladnimizhan/Nuvei-Cashier-Card-Scanner-SDK-for-iOS.git"
   s.license                     = 'Commercial license'
   s.author                      = "Nuvei"
   s.source                      = { :git => "git@github.com:vladnimizhan/Nuvei-Cashier-Card-Scanner-SDK-for-iOS.git", :tag => s.version.to_s }
