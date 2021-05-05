@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.static_framework            = true
   s.source_files                = 'NuveiCashierCardScanner/*.{h,m}'
 
-  s.dependency 'CardIO'
+  s.dependency 'CodeScanner'
 end
