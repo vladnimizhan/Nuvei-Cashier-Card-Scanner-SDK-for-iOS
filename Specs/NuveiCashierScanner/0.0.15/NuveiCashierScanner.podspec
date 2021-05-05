@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.vendored_frameworks         = "NuveiCashierScanner.framework"
   s.frameworks                  = 'UIKit','WebKit'
 
-  s.dependency 'CodeScanner'
+  s.dependency 'CardIO'
 end
